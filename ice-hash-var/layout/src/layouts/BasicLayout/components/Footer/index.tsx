@@ -1,0 +1,17 @@
+import React from 'react';
+import styles from './index.module.scss';
+import { appHistory } from '@ice/stark-app';
+
+export default function Footer() {
+  return (
+    <p className={styles.footer}>
+      <span className={styles.logo}>Alibaba Fusion</span>
+      <br />
+      <span className={styles.copyright}>© 2019-现在 Alibaba Fusion & ICE</span>
+
+      <button onClick={() => appHistory.push('/seller', true)}>cesshi</button>
+
+      {/* <a href="#/seller">测试</a> */}
+    </p>
+  );
+}
