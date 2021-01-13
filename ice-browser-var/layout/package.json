@@ -47,5 +47,9 @@
     "name": "ice-react"
   },
   "private": true,
-  "originTemplate": "@icedesign/stark-layout-scaffold"
+  "originTemplate": "@icedesign/stark-layout-scaffold",
+  "resolutions": {
+    "@ice/stark": "2.0.3-1",
+    "@ice/stark-app": "1.2.1-0"
+  }
 }

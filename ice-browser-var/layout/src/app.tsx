@@ -36,7 +36,9 @@ const appConfig: IAppConfig = {
         title: '商家平台',
         sandbox: true,
         // React app demo: https://github.com/ice-lab/icestark-child-apps/tree/master/child-seller-react-16
+        // umd: true, // for test
         url: [
+          // 'http://localhost:3334/js/index.js', // For test
           '//ice.alicdn.com/icestark/child-seller-react/index.js',
           '//ice.alicdn.com/icestark/child-seller-react/index.css',
         ],
@@ -60,6 +62,10 @@ const appConfig: IAppConfig = {
     },
     appRouter: {
       LoadingComponent: PageLoading,
+      fetch: (url) => {
+        console.log('bbb');
+        return window.fetch(url);
+      }
     },
   },
 };

@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Route from './routes';
+import boostarp from './boostrap';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+boostarp()
+  .then(() => {
+    ReactDOM.render(
+      <React.StrictMode>
+        <Route />
+      </React.StrictMode>,
+      document.getElementById('root')
+    );
+  })
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
