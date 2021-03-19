@@ -1,7 +1,7 @@
 {
   "name": "@icedesign/stark-layout-scaffold",
   "version": "0.1.0",
-  "description": "微前端方案 icestark 的框架应用模板，用于快速初始化框架应用",
+  "description": "微前端方案 icestark 的主应用模板，用于快速初始化主应用",
   "dependencies": {
     "@alifd/next": "^1.x",
     "@alifd/theme-design-pro": "^0.x",
@@ -32,24 +32,10 @@
     "eslint:fix": "npm run eslint -- --fix",
     "stylelint": "stylelint \"**/*.{css,scss,less}\""
   },
-  "engines": {
-    "node": ">=8.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/alibaba-fusion/materials/tree/master/scaffolds/ice-stark-layout"
   },
-  "iceworks": {
-    "type": "react",
-    "adapter": "adapter-react-v3"
-  },
-  "ideMode": {
-    "name": "ice-react"
-  },
   "private": true,
-  "originTemplate": "@icedesign/stark-layout-scaffold",
-  "resolutions": {
-    "@ice/stark": "2.0.3-1",
-    "@ice/stark-app": "1.2.1-0"
-  }
+  "originTemplate": "@icedesign/stark-layout-scaffold"
 }

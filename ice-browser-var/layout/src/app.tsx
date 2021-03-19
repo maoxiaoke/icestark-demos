@@ -34,12 +34,12 @@ const appConfig: IAppConfig = {
       const apps = [{
         path: '/seller',
         title: '商家平台',
-        sandbox: true,
+        // sandbox: true,
         // React app demo: https://github.com/ice-lab/icestark-child-apps/tree/master/child-seller-react-16
         // umd: true, // for test
         url: [
           // 'http://localhost:3334/js/index.js', // For test
-          '//ice.alicdn.com/icestark/child-seller-react/index.js',
+          'http://localhost:8000/umi.js',
           '//ice.alicdn.com/icestark/child-seller-react/index.css',
         ],
       }, {
